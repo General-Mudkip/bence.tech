@@ -1,0 +1,20 @@
+.navbar-nav > li{
+  padding-left:10px;
+  padding-right:10px;
+  font-size:25px;
+}
+
+.main-bg-div {
+    margin: 10px;
+}
+
+.div-margins {
+    margin: 20px;
+    overflow: auto;
+}
+
+.wide-button {
+    width:100%;
+    margin-top:10px;
+    object-fit:cover;
+}
