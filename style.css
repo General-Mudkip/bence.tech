@@ -1,11 +1,28 @@
+@font-face {
+    font-family: rogue-serif, serif, oscine;
+    font-style: normal;
+    font-weight: 300;
+}
+
+body {
+    background-color: lightgray;
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+
 .navbar-nav > li{
-  padding-left:10px;
-  padding-right:10px;
-  font-size:25px;
+    padding-left:10px;
+    padding-right:10px;
+    font-size:25px;
 }
 
 .main-bg-div {
-    margin: 10px;
+    margin: 0;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width:auto;
 }
 
 .div-margins {
@@ -17,4 +34,39 @@
     width:100%;
     margin-top:10px;
     object-fit:cover;
+}
+
+.saffran-header {
+    font-family: saffran, sans-serif;
+    font-weight:700;
+    font-style:normal;
+    font-size:100px;
+    margin-bottom:-15px;
+    text-align:center;
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(60,60,60,1) 0%, rgba(37,37,37,1) 57%, rgba(0,0,0,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.nav-link {
+    font-family:oscine, sans-serif;
+    font-weight:300;
+    font-style:normal;
+    font-size:25px;
+    background:#FFF;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.text-list:hover {
+    text-decoration: underline;
+}
+
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
 }
