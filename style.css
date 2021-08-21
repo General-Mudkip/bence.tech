@@ -70,3 +70,22 @@ body {
     user-select: none; /* Non-prefixed version, currently
                                   supported by Chrome, Edge, Opera and Firefox */
 }
+
+.dropdown .dropdown-menu {
+    -webkit-transition: all 0.32s;
+    -moz-transition: all 0.32s;
+    -ms-transition: all 0.32s;
+    -o-transition: all 0.32s;
+    transition: all 0.32s;
+
+    display: block;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateX(0%) scaleY(0);
+    transform-origin: top;
+}
+
+.dropdown-menu.show {
+    opacity: 1;
+    transform: translateX(-25%) scaleY(1);
+}
