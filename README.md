@@ -1,3 +1,3 @@
-# General-Mudkip.github.io
+# BENCE.TECH
 
-Hey.
+A personal website.
