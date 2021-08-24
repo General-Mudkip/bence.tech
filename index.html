@@ -1,98 +1,94 @@
 <!DOCTYPE html>
-<html lang="">
+<html class="h-100" lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
     <title>HOME // BENCE.TECH</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="icon" href="images/logo.png">
 
-    <link rel="stylesheet" href="https://use.typekit.net/utp4obr.css">
-
-    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 
     <script src="https://kit.fontawesome.com/520adc1a8b.js" crossorigin="anonymous"></script>
 
-    <link rel="icon" href="mudkip.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/utp4obr.css">
 
     <style>
-        body {
-            background-color:#9e9e9e;
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
         }
 
-        img {
-            object-fit: cover;
-            height: 50px;
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
         }
     </style>
 
 </head>
 
-<body>
+<body class="d-flex h-100 text-center text-white bg-dark">
 
-<div style="margin: -5% 20px 20px;" class="bg-light p-4 rounded-3 main-bg-div">
-    <h1 class="saffran-header noselect">
-        BENCE.TECH
-    </h1>
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    <header class="mb-auto">
+        <div>
+            <h3 class="float-md-start mb-0 saffran-header">B.T</h3>
+            <nav class="nav nav-masthead justify-content-center float-md-end">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="#">Projects</a>
+            </nav>
+        </div>
+    </header>
 
-    <div style="text-align: center" class="p-2">
-        <p>
-            A personal website.
+    <main class="px-3">
+        <h1 class="saffran-header display-1 noselect">BENCE.TECH</h1>
+        <p class="lead">Hello!<br>I am a student, interested in anything that I don't yet know.</p>
+        <p class="lead">
+            <a data-bs-toggle="modal" data-bs-target="#aboutModal" class="btn btn-lg btn-secondary fw-bold border-white bg-white">Learn more</a>
         </p>
-    </div>
-
-    <nav style="border-radius: 5px" class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Projects
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
-                            <h6 class="dropdown-header">HTML</h6>
-                            <li><a class="dropdown-item" href="https://github.com/General-Mudkip/bence.tech">This Website!</a></li>
-
-                            <li><hr class="dropdown-divider"></li>
-                            <h6 class="dropdown-header">Python</h6>
-                            <li><a class="dropdown-item" href="https://github.com/General-Mudkip/Technetium---Discord-Bot">Technetium</a></li>
-                            <li><a class="dropdown-item" href="https://github.com/General-Mudkip/Computer-Science-y10">Python Projects</a></li>
-
-                            <li><hr class="dropdown-divider"></li>
-                            <h6 class="dropdown-header">Java</h6>
-                            <li><a class="dropdown-item" href="https://github.com/RyanLandDev/EmpireBot">Empire</a></li>
-
-                        </ul>
-                    </li>
-
-                    <li>
-                        <a class="nav-link" href="/about/">
-                            About
-                        </a>
-                    </li>
-
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Platforms
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="https://github.com/General-Mudkip/"><i class="fab fa-github"></i> General-Mudkip</a></li>
-                            <li><a class="dropdown-item" href="https://discordapp.com/users/567665494518267904"><i class="fab fa-discord"></i> General Mudkip#5105</a></li>
-                            <li><a class="dropdown-item" href="mailto:contact@bence.tech"><i class="fas fa-envelope"></i> contact@bence.tech</a></li>
-                        </ul>
-                    </li>
-                </ul>
+    </main>
+    <!-- Modal -->
+    <div class="modal fade" id="aboutModal" tabindex="-1" aria-labelledby="aboutLabel" aria-hidden="true">
+        <div class="modal-dialog rounded-5">
+            <div class="modal-content bg-dark">
+                <div class="modal-header">
+                    <h2 class="modal-title fw-bold mb-0" id="aboutLabel">About Me</h2>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Unfortunately I don't have much to put here at the moment...
+                </div>
+                <br>
+                <div id="wrapper" class="mb-3 mt-2">
+                    <div id="first" class="pe-2">
+                        <img src="images/logo.png" width="40%">
+                    </div>
+                    <div id="second" class="ms-2">
+                        <a class="text-white link" style="text-align:left" href="https://github.com/General-Mudkip"><i class="fab fa-github"></i> General-Mudkip</a><br>
+                        <a class="text-white link" style="text-align:left" href="https://discord.com/users/567665494518267904"><i class="fab fa-discord"></i> General Mudkip#5105</a><br>
+                        <a class="text-white link" style="text-align:left" href="#"><i class="fas fa-envelope"></i> contact@bence.tech</a>
+                    </div>
+                </div>
             </div>
         </div>
-    </nav>
+    </div>
 
+    <footer class="mt-auto text-white-50">
+        <p><a class="text-white" href="mailto:contact@bence.tech">Reach out.</a></p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 </div>
 
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
 </body>
+
 </html>

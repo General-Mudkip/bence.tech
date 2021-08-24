@@ -1,66 +1,8 @@
-@font-face {
-    font-family: rogue-serif, serif, oscine;
-    font-style: normal;
-    font-weight: 300;
-}
-
-body {
-    background-color: lightgray;
-    background-repeat:no-repeat;
-    background-size:cover;
-    background-image: url("hexagons.png");
-}
-
-.navbar-nav > li{
-    padding-left:10px;
-    padding-right:10px;
-    font-size:25px;
-}
-
-.main-bg-div {
-    margin: 0;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width:auto;
-}
-
-.div-margins {
-    margin: 20px;
-    overflow: auto;
-}
-
-.wide-button {
-    width:100%;
-    margin-top:10px;
-    object-fit:cover;
-}
-
 .saffran-header {
     font-family: saffran, sans-serif;
-    font-weight:700;
-    font-style:normal;
-    font-size:100px;
-    margin-bottom:-15px;
-    text-align:center;
-    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(60,60,60,1) 0%, rgba(37,37,37,1) 57%, rgba(0,0,0,1) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.nav-link {
-    font-family:oscine, sans-serif;
-    font-weight:300;
-    font-style:normal;
-    font-size:25px;
-    background:#FFF;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.text-list:hover {
-    text-decoration: underline;
+    font-weight: 700;
+    font-style: normal;
+    color: rgba(255, 255, 255);
 }
 
 .noselect {
@@ -72,21 +14,100 @@ body {
                                   supported by Chrome, Edge, Opera and Firefox */
 }
 
-.dropdown .dropdown-menu {
-    -webkit-transition: all 0.32s;
-    -moz-transition: all 0.32s;
-    -ms-transition: all 0.32s;
-    -o-transition: all 0.32s;
-    transition: all 0.32s;
+/*
+ * Globals
+ */
 
-    display: block;
-    overflow: hidden;
-    opacity: 0;
-    transform: translateX(0%) scaleY(0);
-    transform-origin: top;
+.modal-header {
+    border-bottom:0;
+    text-align:center;
 }
 
-.dropdown-menu.show {
-    opacity: 1;
-    transform: translateX(-0%) scaleY(1);
+.modal-body {
+    border-bottom:0;
+}
+
+.modal-footer {
+    border-top:0;
+}
+
+.vl {
+    border-left: 6px #ffffff;
+    height: 500px;
+}
+
+.link {
+    text-decoration: none;
+}
+
+#wrapper{
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    flex:1;
+}
+
+#first{
+    text-align: right;
+    width: 50%;
+    border-right-style: solid;
+    border-width: 2px;
+    border-right-color: #333;
+}
+
+#second{
+    text-align: left;
+    width:50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Custom default button */
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+    color: #333;
+    text-shadow: none; /* Prevent inheritance from `body` */
+}
+
+
+/*
+ * Base structure
+ */
+
+body {
+    text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+    box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+}
+
+.cover-container {
+    max-width: 42em;
+}
+
+
+/*
+ * Header
+ */
+
+.nav-masthead .nav-link {
+    padding: .25rem 0;
+    font-weight: 700;
+    color: rgba(255, 255, 255, .5);
+    background-color: transparent;
+    border-bottom: .25rem solid transparent;
+}
+
+.nav-masthead .nav-link:hover,
+.nav-masthead .nav-link:focus {
+    border-bottom-color: rgba(255, 255, 255, .25);
+}
+
+.nav-masthead .nav-link + .nav-link {
+    margin-left: 1rem;
+}
+
+.nav-masthead .active {
+    color: #fff;
+    border-bottom-color: #fff;
 }
