@@ -86,17 +86,9 @@ body {
     max-width: 62em;
 }
 
-.card-body:hover {
-    border-color: black;
-}
-
-.col {
-    box-shadow: 0 0 1em 0.01em #2c2c2c;
-}
-
 .card {
-    background-color: #2c2c2c;
-    border-radius: 4em;
+    background-color: #212428;
+    border-radius: 0em;
 }
 
 /*
